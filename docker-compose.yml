@@ -1,0 +1,13 @@
+version: '3.8'
+
+services:
+  gcloud-tests:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    environment:
+      - GOOGLE_APPLICATION_CREDENTIALS=/gcloud/service-account.json
+    volumes:
+      # Use forward slashes and ensure the host path is correct
+      - //c/Users/Mor/.gcloud:/gcloud
+    command: mvn test
