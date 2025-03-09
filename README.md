@@ -15,8 +15,8 @@ Service Account JSON Key <br> • download the JSON key. Then set:<br> <code>GOO
 <u>2. Setup & Run Tests</u><br>
 
 Clone the Repo<br> <code>git clone [https://github.com/morh1/google-storage-test-automation]<br> cd google-storage-test-automation</code><br> <br>
-
-(Optional) Set GOOGLE_APPLICATION_CREDENTIALS to the path you located the json<br> 
+Set GOOGLE_APPLICATION_CREDENTIALS to the path you located the json<br> 
+in google-storage-test-automation/src/test/java/testcases/SignUrlCommandTest.java look for userEmail variable and change its value to your mail adress.
 
 
 Run Tests<br> <code>mvn test</code><br> This will compile and execute TestNG tests, potentially creating a GCP project and performing GCS operations.<br> <br>
